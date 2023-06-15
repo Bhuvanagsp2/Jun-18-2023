@@ -1,0 +1,66 @@
+body {
+    background: #daddea;
+}
+.container {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.linkedin-icon{
+    background: #0072b1;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    .i{
+        position: absolute;
+        height: 90px;
+        width: 30px;
+        background: #fff;
+        bottom: 30px;
+        left: 30px;
+        &::after {
+            content: "";
+            position: absolute;
+            background: #fff;
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            bottom: 104px;
+            left: -3px;
+        }
+    }
+    .n {
+        position: absolute;
+        height: 90px;
+        width: 30px;
+        background: #fff;
+        bottom: 30px;
+        left: 80px;
+        &::before {
+            content: "";
+            position: absolute;
+            background: #fff;
+            border-radius: 5000px 5000px 0 0;
+            height: 90px;
+            width: 67px;
+            bottom: 0;
+            left: 23px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            background: #0072b1;
+            border-radius: 5000px 5000px 0 0;
+            height: 70px;
+            width: 33px;
+            bottom: 0;
+            left: 30px;
+        }
+    }
+}
